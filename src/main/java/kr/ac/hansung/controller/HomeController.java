@@ -26,5 +26,10 @@ public class HomeController {
 		
 		return "home";
 	}
-
+	
+	//index로 보냄.
+	@RequestMapping(value = "/new", method = RequestMethod.GET)
+	public String newHome() {
+		return "index";
+	}
 }
